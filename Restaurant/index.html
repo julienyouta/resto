@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/animal.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto - Mobile Adapté</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>Le </span>Crapautage</a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar">
+            <li><a href="#banniere">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <!-- <li><a href="#expert">Expert</a></li>
+            <li><a href="#temoignage">Avis</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+            <a href="extention réservation.html" class="btn-reserve">Réservation</a>
+            
+
+        </ul>
+    </header>
+    
+    <section class="banniere" id="banniere">
+        <div class="contenu">
+            <h2>Que Des Plats Délicieux</h2>
+            <p>Découvrez nos plats et notre culture culinaire à base de crapaud.</p>
+            <a href="#menu" class="btn1">Notre Menu</a>
+            <a href="extention réservation.html" class="btn-reserve">Reservation</a>
+        </div>
+    </section>
+    
+    <section class="apropos" id="apropos">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titre-texte">À Propos De Nous</h2>
+                <p>Nous sommes un restaurant local basé à Lyon, spécialisé dans les plats à base de crapaud.</p>
+            </div>
+            <div class="col50">
+                <img src="./images/cuisse_grenouil_crempersil.webp" alt="Cuisse de Grenouille">
+            </div>
+        </div>
+    </section>
+    
+    <section class="menu" id="menu">
+        <h2 class="titre-texte">Notre Menu</h2>
+        <div class="contenu">
+            <div class="box">
+                <img src="./images/grenouilles-291.jpg" alt="Tartine de Grenouille">
+                <h3>Tartine de Grenouille (1.99€)</h3>
+            </div>
+            <div class="box">
+                <img src="./images/burger.jpg" alt="Burger de Grenouille">
+                <h3>Burger de Grenouille (6.50€)</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2 class="titre-text">Contact</h2>
+        <p>Des questions ? Contactez-nous !</p>
+        <form>
+            <input type="text" placeholder="Nom">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>© 2024 Le Crapautage - Tous droits réservés</p>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navbar').classList.toggle('active');
+            document.querySelector('.menuToggle').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+

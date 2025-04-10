@@ -1,0 +1,390 @@
+:root {
+    --primary-color: #01ff5ad4;
+    --secondary-color: #2a4963;
+    --text-color: #000;
+    --text-light: #ffffff;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.logo {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.navbar a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.btn-reserve {
+    padding: 10px 20px;
+    background: var(--primary-color);
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn-reserve:hover {
+    background: var(--secondary-color);
+}
+
+.banniere {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/B.jpeg) center/cover no-repeat;
+    text-align: center;
+}
+
+.banniere .contenu {
+    max-width: 70%;
+}
+
+.banniere h2 {
+    color: var(--text-light);
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.btn1, .btn2 {
+    font-size: 1em;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.btn1 {
+    color: var(--text-light);
+    background: var(--primary-color);
+}
+
+.btn1:hover {
+    transform: scale(1.05);
+}
+
+.btn2 {
+    color: var(--text-light);
+    background: var(--secondary-color);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 100px;
+}
+
+.row .col50 {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.row img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.menu .contenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu .contenu .box {
+    width: 250px;
+    margin: 10px;
+    border: 10px solid var(--text-light);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+
+}
+
+
+
+.menu .contenu .box:hover {
+    transform: scale(1.05);
+}
+
+.temoignage {
+    background: url(./images/PL.webp) center/cover no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.temoignage .contenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact {
+    background: url(./images/CUI.jpeg) center/cover no-repeat;
+    padding: 100px 20px;
+}
+
+.contactform {
+    max-width: 50px;
+    margin: auto;
+    background: #fff;
+    padding: 50px;
+    box-shadow: 5px 15px 50px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.contactform input, 
+.contactform textarea {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    margin-bottom: 15px;
+    height: 40px; /* Hauteur uniforme */
+}
+
+.contactform input[type="submit"] {
+    background: var(--primary-color);
+    color: var(--text-light);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contactform input[type="submit"]:hover {
+    background: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .menuToggle {
+        display: block;
+        background: url(./images/menu.png) center/cover no-repeat;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .banniere h2 {
+        font-size: 2em;
+    }
+
+    .row {
+        padding: 20px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .banniere h2 {
+        font-size: 1.8em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --primary-color: #01ff5ad4;
+    --secondary-color: #000000;
+    --text-color: #000;
+    --text-light: #ffffff;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
+}
+
+.menu {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu h2 {
+    color: var(--secondary-color);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.menu .contenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Boîte contenant chaque plat */
+.menu .contenu .box {
+    width: 320px; /* Taille fixe */
+    background: #fff;
+    border: 5px solid var(--text-light);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.menu .contenu .box:hover {
+    transform: scale(1.05);
+}
+
+/* Image du plat */
+.menu .contenu .box img {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+/* Description du plat */
+.menu .contenu .box .details {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu .contenu .box .details h3 {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.menu .contenu .box .details p {
+    font-size: 1em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+/* Bouton commander */
+.menu .contenu .box .btn-commande {
+    display: inline-block;
+    padding: 8px 15px;
+    background: var(--primary-color);
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.menu .contenu .box .btn-commande:hover {
+    background: var(--secondary-color);
+}
+
+/* Responsive pour tablettes */
+@media (max-width: 768px) {
+    .menu .contenu .box {
+        width: 280px;
+    }
+
+    .menu .contenu .box img {
+        max-width: 260px;
+    }
+}
+
+/* Responsive pour mobile */
+@media (max-width: 480px) {
+    .menu .contenu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu .contenu .box {
+        width: 90%;
+    }
+
+    .menu .contenu .box img {
+        max-width: 100%;
+    }
+
+    .menu h2 {
+        font-size: 2em;
+    }
+}

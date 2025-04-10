@@ -1,0 +1,58 @@
+  /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Conteneur de confirmation */
+        .confirmation-container {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 450px;
+            width: 90%;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        /* Animation d'apparition */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Style des titres et paragraphes */
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        /* Bouton de retour */
+        .confirmation-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .confirmation-btn:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
